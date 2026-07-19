@@ -12,7 +12,7 @@ Traditional retail analytics setups isolate operational databases (sales, transa
 
 ## Screenshot
 
-![OmniCart Analytics AI Dashboard](dashboard_screenshot.png)
+![OmniCart Analytics AI Dashboard](dashboard_screenshot.PNG)
 
 ## Architecture
 
