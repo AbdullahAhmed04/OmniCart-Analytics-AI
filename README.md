@@ -10,6 +10,10 @@ Traditional retail analytics setups isolate operational databases (sales, transa
 - An **Unstructured Engine** (Qdrant vector store + RAG) for querying corporate policies and FAQs
 - A **LangChain ReAct Agent** (powered by Groq's Llama 3.3 70B) that automatically routes each question to the correct engine — or combines both when a question needs numeric data *and* policy context together
 
+## Screenshot
+
+![OmniCart Analytics AI Dashboard](dashboard_screenshot.png)
+
 ## Architecture
 
 ```
