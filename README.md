@@ -1,6 +1,6 @@
 # OmniCart Analytics AI
 
-**Enterprise Big Data & RAG Intelligence Engine** — a hybrid AI assistant that unifies structured retail transaction data with unstructured corporate policy documents, queryable through natural language.
+**Enterprise Big Data & RAG Intelligence Engine**: a hybrid AI assistant that unifies structured retail transaction data with unstructured corporate policy documents, queryable through natural language.
 
 ## Overview
 
@@ -8,11 +8,11 @@ Traditional retail analytics setups isolate operational databases (sales, transa
 
 - A **Structured Engine** (Apache Spark SQL) for querying transactional and vendor performance data
 - An **Unstructured Engine** (Qdrant vector store + RAG) for querying corporate policies and FAQs
-- A **LangChain ReAct Agent** (powered by Groq's Llama 3.3 70B) that automatically routes each question to the correct engine — or combines both when a question needs numeric data *and* policy context together
+- A **LangChain ReAct Agent** (powered by Groq's Llama 3.3 70B) that automatically routes each question to the correct engine, or combines both when a question needs numeric data *and* policy context together
 
 ## Screenshot
 
-![OmniCart Analytics AI Dashboard](dashboard_screenshot.PNG)
+![OmniCart Analytics AI Dashboard](dashboard_screenshot.png)
 
 ## Architecture
 
@@ -67,11 +67,11 @@ Traditional retail analytics setups isolate operational databases (sales, transa
 |---|---|
 | "What is the total revenue generated in Lahore?" | Structured (Spark SQL) |
 | "How long does standard shipping take?" | Unstructured (RAG) |
-| "Why might Fast Fashion Lahore be at risk of suspension?" | Both — pulls defect rate from Spark SQL and the ODR policy rule from RAG |
+| "Why might Fast Fashion Lahore be at risk of suspension?" | Both: pulls defect rate from Spark SQL and the ODR policy rule from RAG |
 
 ## Running This Project
 
-This project is designed to run entirely in **Google Colab**, completely free — no paid API keys, no cloud infrastructure, no local storage requirements.
+This project is designed to run entirely in **Google Colab**, completely free: no paid API keys, no cloud infrastructure, no local storage requirements.
 
 1. Open `OmniCart_Analytics_AI.ipynb` in Google Colab
 2. Get a free Groq API key at [console.groq.com](https://console.groq.com) → API Keys → Create API Key
@@ -93,6 +93,6 @@ OmniCart-Analytics-AI/
 
 ## Notes
 
-- All data (transactions, vendor performance, policy documents) is **synthetically generated** — no external dataset dependency, no training required
+- All data (transactions, vendor performance, policy documents) is **synthetically generated**: no external dataset dependency, no training required
 - No models are trained from scratch; this project uses pre-trained embeddings + LLM inference with retrieval and tool-calling
-- The Qdrant vector store runs in `:memory:` mode, so it resets each time the notebook restarts — this is intentional for a free, zero-infrastructure demo
+- The Qdrant vector store runs in `:memory:` mode, so it resets each time the notebook restarts. This is intentional for a free, zero-infrastructure demo
