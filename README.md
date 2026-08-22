@@ -4,7 +4,7 @@
 
 ## Screenshot
 
-![OmniCart Analytics AI Dashboard](app_screenshot_1.png)
+![OmniCart Analytics AI Dashboard](app_screenshot_1.PNG)
 
 ## Update Log
 
@@ -98,7 +98,8 @@ OmniCart-Analytics-AI/
 ├── OmniCart_Analytics_AI.ipynb   # Main notebook (all cells)
 ├── requirements.txt               # Python dependencies
 ├── README.md                      # This file
-├── app_screenshot_1.png           # Dashboard screenshot
+├── app_screenshot_1.PNG           # Dashboard screenshot
+├── dashboard_screenshot.PNG       # Old Dashboard screenshot
 └── .gitignore
 ```
 
